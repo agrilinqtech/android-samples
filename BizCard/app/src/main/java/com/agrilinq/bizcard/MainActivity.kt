@@ -106,7 +106,7 @@ fun CreateBixCard() {
                 if (buttonClickState.value) {
                     Content()
                 } else {
-                    Box{}
+                    Surface{}
                 }
             }
         }
@@ -141,14 +141,10 @@ fun GreetingPreview() {
 //@Preview(showBackground = true)
 @Composable
 fun Content() {
-    Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(5.dp),
-    ) {
+
         Surface(
             modifier = Modifier
-                .padding(3.dp)
+                .padding(8.dp)
                 .fillMaxSize(),
             shape = RoundedCornerShape(corner = CornerSize(3.dp)),
             border = BorderStroke(width = 2.dp, color = Color.LightGray)
@@ -156,7 +152,6 @@ fun Content() {
         ) {
             Portfolio(data = listOf("專案一", "專案二", "專案三", "專案三", "專案三", "專案三"))
         }
-    }
 }
 
 //@Composable
