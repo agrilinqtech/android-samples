@@ -99,7 +99,7 @@ fun CreateBixCard() {
                     }
                 ) {
                     Text(
-                        text = "Portfolio",
+                        text = "專案經歷",
                         style = MaterialTheme.typography.bodyMedium
                     )
                 }
@@ -117,16 +117,15 @@ fun CreateBixCard() {
 private fun CreateInfo() {
     Column(modifier = Modifier.padding(5.dp)) {
         Text(
-            text = "Sander.Chen",
+            text = "陳柏炘 Sander.Chen",
             style = MaterialTheme.typography.headlineLarge,
             color = MaterialTheme.colorScheme.primary
         )
         Text(
-            text = "Android Compose Programmer",
+            text = "Android 開發工程師/講師",
         )
         Text(
-            text = "@sanderxavalon",
-            style = MaterialTheme.typography.labelMedium
+            text = "@sanderxavalon"
         )
     }
 }
